@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import { createContext } from "react";
 
 export interface Pokemon {
   name: string;
@@ -11,6 +11,7 @@ export interface PokemonContextType {
   error: unknown;
   setSearchQuery: (query: string) => void;
   setSortByField: (query: string) => void;
+  setSortByName: (query: string) => void;
 }
 
 const PokemonContext = createContext<PokemonContextType | undefined>(undefined);

@@ -17,6 +17,7 @@ const PokeDetail: React.FC = () => {
     <MobileWrapper>
       <Header />
       <div className="w-full h-full px-6 py-8">
+        <div className="text-lg text-custom-gray">#{pokemonDetails.id}</div>
         <div className="w-full relative mb-3">
           <img src={pokemonDetails.artworkFront} alt="pokemon image" />
         </div>
@@ -31,9 +32,7 @@ const PokeDetail: React.FC = () => {
           />
         </div>
         <div className="rounded-2xl bg-dark-rift p-4 flex flex-col gap-2">
-          <div className=" text-velvet-robe leading-[14px]">
-            Health
-          </div>
+          <div className=" text-velvet-robe leading-[14px]">Health</div>
           <div className="w-full rounded-full bg-chronicle h-[6px]">
             <div
               style={{
@@ -49,11 +48,15 @@ const PokeDetail: React.FC = () => {
           <div className="flex">
             <div className="flex flex-col gap-1 basis-1/2">
               <span className="leading-[14px] text-velvet-robe">Attack</span>
-              <span className="text-white text-2xl font-bold">{pokemonDetails.attack}</span>
+              <span className="text-white text-2xl font-bold">
+                {pokemonDetails.attack}
+              </span>
             </div>
             <div className="flex flex-col gap-1 basis-1/2">
               <span className="leading-[14px] text-velvet-robe">Defense</span>
-              <span className="text-white text-2xl font-bold">{pokemonDetails.defense}</span>
+              <span className="text-white text-2xl font-bold">
+                {pokemonDetails.defense}
+              </span>
             </div>
           </div>
         </div>

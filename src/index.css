@@ -1,15 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body, html, #root {
+body,
+html,
+#root {
   margin: 0;
   padding: 0;
 }
 
 body {
   @apply w-screen min-h-screen flex justify-center;
+}
+
+.bg-lighter-blue {
+  background: #3d4466;
+}
+
+.bg-darker-blue {
+  background: #0c1231;
+}
+
+.custom-border {
+  border-left: 1px solid #97a0cc;
+}
+
+.text-custom-gray {
+  color: #97a0cc;
+}
+
+.text-custom-black {
+  color: #212e4c;
+}
+
+.custom-dropdown {
+  background: #3d4466;
+}
+
+.custom-dropdown:hover {
+  background: #7a87c7;
 }

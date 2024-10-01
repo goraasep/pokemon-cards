@@ -6,4 +6,5 @@ export interface PokemonDetails {
   defense: number;
   spriteFront: string;
   artworkFront: string;
+  types: string[];
 }
